@@ -1,0 +1,195 @@
+/* General Styles */
+/*******************/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 900 !important;
+	letter-spacing: 1px;
+}
+
+.section-padding {
+	padding: 5.5rem 0;
+}
+/*******************/
+
+/* Sections Styles */
+/*******************/
+
+/* Start Header */
+#header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(images/header.jpg);
+	background-size: cover;
+	background-position: center;
+}
+@media (max-width: 922px) {
+	#header {
+		height: 60vh;
+	}
+}
+.header-title {
+	font-size: 5.5rem;
+}
+/* End Header */
+
+/*******************/
+
+/* Start About */
+#about {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#about p {
+	font-size: 1.25rem;
+	font-weight: 200;
+	font-size: medium;
+}
+/* End About */
+
+/*******************/
+
+/* Start Services */
+#services {
+	padding: 5.5rem 0;
+}
+
+#services h2 {
+	font-size: 3rem !important;
+}
+
+.service-item > i {
+	font-size: 3rem;
+	text-align: center;
+	background-color: #ffffff;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	line-height: 110px;
+}
+
+.service-item-desc {
+	color: rgba(255, 255, 255, .7);
+}
+
+/* End Services */
+
+/*******************/
+
+/* Start Welconme */
+#Welcome {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(images/welcome.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.Welcome-title {
+	font-size: 3.5rem;
+	font-weight: 900;
+}
+/* End Welconme */
+
+/*******************/
+
+/* Start Portfolio */
+
+.portfolio-item {
+	position: relative;
+	background-color: transparent;
+}
+
+.portfolio-item-desc {
+	/* background-color: seagreen; */
+	position: absolute;
+	left: 1rem;
+	bottom: 1rem;
+	color: #ffffff;
+	z-index: 10;
+}
+
+.portfolio-item img {
+	clip-path: inset(0);
+	transition: .3s;
+}
+
+.portfolio-item:hover img {
+	clip-path: inset(5%);
+}
+.over-lay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(29, 128, 159, .8);
+	opacity: 0;
+	transition: .3s;
+}
+
+.portfolio-item:hover .over-lay {
+	opacity: 1;
+	width: 90%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+}
+/* End Portfolio */
+
+/*******************/
+
+/* Start Map */
+
+#map{
+	height: 60vh;
+}
+
+/* End Map */
+
+/*******************/
+
+/* Start Footer */
+
+.footer-icons i{
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	line-height: 65px;
+	font-size: 2rem;
+	transition: .5s;
+}
+
+.footer-icons a:hover i{
+	background-color: #128ca0 !important;
+}
+
+#footer p{
+	font-size: 13px;
+	font-weight: bold;
+	color: rgba(000, 000, 000, .5);
+}
+/* End Footer */
+

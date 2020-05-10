@@ -1,3 +1,4 @@
+/*******************/
 /* General Styles */
 /*******************/
 *,
@@ -25,8 +26,12 @@ h6 {
 .section-padding {
 	padding: 5.5rem 0;
 }
-/*******************/
 
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*******************/
 /* Sections Styles */
 /*******************/
 
@@ -163,7 +168,7 @@ h6 {
 
 /* Start Map */
 
-#map{
+#map {
 	height: 60vh;
 }
 
@@ -173,7 +178,7 @@ h6 {
 
 /* Start Footer */
 
-.footer-icons i{
+.footer-icons i {
 	display: inline-block;
 	width: 65px;
 	height: 65px;
@@ -182,14 +187,13 @@ h6 {
 	transition: .5s;
 }
 
-.footer-icons a:hover i{
+.footer-icons a:hover i {
 	background-color: #128ca0 !important;
 }
 
-#footer p{
+#footer p {
 	font-size: 13px;
 	font-weight: bold;
 	color: rgba(000, 000, 000, .5);
 }
 /* End Footer */
-
